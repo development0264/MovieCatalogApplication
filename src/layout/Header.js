@@ -3,7 +3,7 @@ import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 
-export const Header = ({ OpenSidebar }) => {
+export const Header = ({ OpenSidebar}) => {
     const name = useParams();
     const navigate = useNavigate();
     return (
@@ -18,12 +18,12 @@ export const Header = ({ OpenSidebar }) => {
                     <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1, fontWeight: 'bold' }}>
                         Movie Catalog Application
                     </Typography>
-                    {name.title ?
-                        <Button variant="outlined" onClick={() => navigate('/')} sx={{ color: 'white', backgroundColor: '#2a52be' }}>
-                            Back
+                    {name.id ?
+                        <Button variant="contained" onClick={() => navigate('/')} sx={{ color: 'white', backgroundColor: '#2a52be' }}>
+                            Back To Movies List
                         </Button>
                         :
-                        <FilterAltIcon variant="outlined" onClick={() => OpenSidebar(true)} sx={{ color: 'white', backgroundColor: '#2a52be' }}>
+                        <FilterAltIcon variant="contained" onClick={() => OpenSidebar(true)} sx={{ color: 'white', backgroundColor: '#2a52be' }}>
                             Open Sidebar
                         </FilterAltIcon>
                     }

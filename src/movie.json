@@ -1,114 +1,274 @@
 {
   "movies": [
     {
+      "id": "avatar",
       "title": "Avatar",
       "Genre": "Animation",
-      "releaseYear": "2019",
+      "releaseYear": "2015",
       "description": "An extraordinary Animation Movie released in 2019, Avatar takes audiences on a visually stunning journey.The film, with a runtime of 2 hours and 30 minutes, explores a captivating animated world with intricate details and compelling characters. Delve into a realm where imagination knows no bounds as you witness a tale that transcends the limits of reality. Immerse yourself in the beauty of animation and storytelling that brings the screen to life",
       "shortDesc": "Animation Movie",
-      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800",
-      "buttonText": "Details",
-      "buttonVariant": "outlined"
+      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800"
     },
     {
+      "id": "toy-story-4",
+      "title": "Toy Story 4",
+      "Genre": "Animation",
+      "releaseYear": "2018",
+      "description": "Toy Story 4, released in 2019, continues the beloved Pixar series with heartwarming adventures. Join Woody, Buzz Lightyear, and new friends as they embark on a journey that explores friendship, loyalty, and the meaning of being a toy. The film has a runtime of 1 hour and 40 minutes.",
+      "shortDesc": "Animated Adventure",
+      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800"
+    },
+    {
+      "id": "frozen-ii",
+      "title": "Frozen II",
+      "Genre": "Animation",
+      "releaseYear": "2019",
+      "description": "Frozen II, the enchanting sequel to the 2013 hit, invites audiences on a magical journey. Join Elsa and Anna as they discover the origins of Elsa's powers and the secrets of their kingdom. The film, with a runtime of 1 hour and 43 minutes, is a visually stunning animated adventure.",
+      "shortDesc": "Animated Fantasy",
+      "ImageURL": "https://source.unsplash.com/user/jeremythomasphoto/1900x800"
+    },
+    {
+      "id": "spider-man",
+      "title": "Spider-Man",
+      "Genre": "Animation",
+      "releaseYear": "2020",
+      "description": "Spider-Man: Into the Spider-Verse, a groundbreaking animated film from 2018, introduces audiences to a multiverse of Spider-People. With a unique visual style, engaging characters, and a thrilling storyline, this movie is a must-watch for Spider-Man fans. It has a runtime of 1 hour and 57 minutes.",
+      "shortDesc": "Animated Superhero",
+      "ImageURL": "https://source.unsplash.com/user/jeremythomasphoto/1900x800"
+    },
+    {
+      "id": "the-hidden-world",
+      "title": "The Hidden World",
+      "Genre": "Animation",
+      "releaseYear": "2022",
+      "description": "Concluding the epic trilogy, How to Train Your Dragon: The Hidden World takes audiences on a breathtaking animated journey. Join Hiccup and Toothless as they face new challenges and discover a hidden dragon utopia. The film has a runtime of 1 hour and 44 minutes.",
+      "shortDesc": "Animated Adventure",
+      "ImageURL": "https://source.unsplash.com/user/jonflobrant/1900x800"
+    },
+    {
+      "id": "the-lion-king",
+      "title": "The Lion King",
+      "Genre": "Animation",
+      "releaseYear": "2023",
+      "description": "The Lion King, a timeless classic reimagined in 2019, brings the iconic characters of Simba, Mufasa, and Scar to life. With stunning visuals and a powerful story, this animated film captivates audiences of all ages. The runtime is 1 hour and 58 minutes.",
+      "shortDesc": "Animated Drama",
+      "ImageURL": "https://source.unsplash.com/user/element5digital/1900x800"
+    },
+    {
+      "id": "ff10",
       "title": "FF10",
       "Genre": "Racing",
       "releaseYear": "2023",
       "description": "Buckle up for a thrilling ride with FF10, a Racing Movie that hit the screens in 2023. With heart-pounding action and adrenaline-fueled sequences, this film promises to keep you on the edge of your seat for its entire 2 hours and 30 minutes runtime. Experience the rush of high-speed racing as you follow the intense journey of characters pushing the limits of speed and skill. Get ready for a cinematic adventure that captures the essence of the racing world",
       "shortDesc": "Racing Movie",
-      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800 ",
-      "buttonText": "Details",
-      "buttonVariant": "outlined"
+      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800 "
     },
     {
+      "id": "ff7",
+      "title": "FF7",
+      "Genre": "Racing",
+      "releaseYear": "2015",
+      "description": "Buckle up for a thrilling ride with FF10, a Racing Movie that hit the screens in 2023. With heart-pounding action and adrenaline-fueled sequences, this film promises to keep you on the edge of your seat for its entire 2 hours and 30 minutes runtime. Experience the rush of high-speed racing as you follow the intense journey of characters pushing the limits of speed and skill. Get ready for a cinematic adventure that captures the essence of the racing world",
+      "shortDesc": "Racing Movie",
+      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800 "
+    },
+    {
+      "id": "speed-rivals",
+      "title": "Speed Rivals",
+      "Genre": "Racing",
+      "releaseYear": "2022",
+      "description": "Gear up for the ultimate racing experience in Speed Rivals, a 2022 Racing Movie. This film takes you on a high-stakes journey filled with intense rivalries and mind-blowing speed. With a runtime of 2 hours, immerse yourself in the world of competitive racing and witness the pursuit of victory like never before.",
+      "shortDesc": "Racing Movie",
+      "ImageURL": "https://source.unsplash.com/user/jeremythomasphoto/1900x800"
+    },
+    {
+      "id": "nitro-rush",
+      "title": "Nitro Rush",
+      "Genre": "Racing",
+      "releaseYear": "2020",
+      "description": "Hold on tight for Nitro Rush, a Racing Movie that roared onto the scene in 2021. This adrenaline-packed film delivers non-stop action as racers push their machines to the limit. With a runtime of 2 hours and 15 minutes, get ready for a high-octane cinematic experience that will leave you breathless.",
+      "shortDesc": "Racing Movie",
+      "ImageURL": "https://source.unsplash.com/user/jeremythomasphoto/1900x800"
+    },
+    {
+      "id": "asphalt-thunder",
+      "title": "Asphalt Thunder",
+      "Genre": "Racing",
+      "releaseYear": "2019",
+      "description": "Experience the roar of engines in Asphalt Thunder, a Racing Movie that hit the tracks in 2020. This film promises an adrenaline-fueled joyride with intense racing sequences and gripping competition. With a runtime of 2 hours and 10 minutes, get ready for a cinematic journey that captures the spirit of the asphalt jungle.",
+      "shortDesc": "Racing Movie",
+      "ImageURL": "https://source.unsplash.com/user/jeremythomasphoto/1900x800"
+    },
+    {
+      "id": "turbo-velocity",
+      "title": "Turbo Velocity",
+      "Genre": "Racing",
+      "releaseYear": "2018",
+      "description": "Step into the world of Turbo Velocity, a Racing Movie that revved up audiences in 2019. With sleek cars and intense competition, this film delivers a high-speed experience that will leave you on the edge of your seat. The runtime is 2 hours and 20 minutes of pure racing excitement.",
+      "shortDesc": "Racing Movie",
+      "ImageURL": "https://source.unsplash.com/user/jeremythomasphoto/1900x800"
+    },
+    {
+      "id": "avengers",
       "title": "Avengers",
       "Genre": "Action",
       "releaseYear": "2022",
       "description": "Avengers the Action Movie of 2022, is a spectacle of epic proportions. With a runtime of 2 hours, this film unites iconic superheroes in a battle against formidable foes. Brace yourself for intense action, mind-blowing special effects, and a storyline that weaves together the destinies of Earth's mightiest heroes. Immerse yourself in a cinematic universe that has captured the hearts of audiences worldwide",
       "shortDesc": "Action Movie",
-      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800 ",
-      "buttonText": "Details",
-      "buttonVariant": "outlined"
+      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800 "
     },
     {
+      "id": "mission-fallout",
+      "title": "Mission: Impossible",
+      "Genre": "Action",
+      "releaseYear": "2015",
+      "description": "Mission: Impossible - Fallout, released in 2018, is a high-octane action thriller. Join Ethan Hunt in a pulse-pounding race against time as he and his team attempt to prevent a global catastrophe. With jaw-dropping stunts and a gripping plot, this film delivers non-stop excitement. The runtime is 2 hours and 27 minutes.",
+      "shortDesc": "Action Thriller",
+      "ImageURL": "https://source.unsplash.com/user/steve_j/1900x800"
+    },
+    {
+      "id": "john-wick",
+      "title": "John Wick",
+      "Genre": "Action",
+      "releaseYear": "2018",
+      "description": "John Wick: Chapter 3 - Parabellum, a 2019 action extravaganza, follows the legendary assassin John Wick on the run. Fueled by revenge and survival instincts, Wick faces relentless challenges in a stylish and adrenaline-fueled cinematic experience. The film has a runtime of 2 hours and 10 minutes.",
+      "shortDesc": "Action Thriller",
+      "ImageURL": "https://source.unsplash.com/user/jeremythomasphoto/1900x800"
+    },
+    {
+      "id": "mad-max",
+      "title": "Mad Max",
+      "Genre": "Action",
+      "releaseYear": "2019",
+      "description": "Mad Max: Fury Road, a post-apocalyptic action masterpiece from 2015, takes audiences on a high-speed chase through the wasteland. Join Max and Furiosa in a visually stunning and action-packed quest for survival. The film's runtime is 2 hours and 0 minutes.",
+      "shortDesc": "Apocalyptic Action",
+      "ImageURL": "https://source.unsplash.com/user/cikstefan/1900x800"
+    },
+    {
+      "id": "die-hard",
+      "title": "Die Hard",
+      "Genre": "Action",
+      "releaseYear": "1920",
+      "description": "Die Hard, a classic action film from 1988, introduces NYPD officer John McClane in a high-stakes battle against terrorists. Packed with suspense, iconic one-liners, and explosive action, this film has become a genre-defining masterpiece. The runtime is 2 hours and 12 minutes.",
+      "shortDesc": "Classic Action",
+      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800"
+    },
+    {
+      "id": "the-dark-knight",
+      "title": "The Dark Knight",
+      "Genre": "Action",
+      "releaseYear": "2023",
+      "description": "The Dark Knight, released in 2008, is a gripping action drama that follows Batman's pursuit of justice against the chaotic Joker. With stellar performances and a compelling storyline, this film is a cinematic masterpiece. The runtime is 2 hours and 32 minutes.",
+      "shortDesc": "Superhero Action",
+      "ImageURL": "https://source.unsplash.com/user/joelvalve/1900x800"
+    },
+    {
+      "id": "jumanji",
       "title": "Jumanji",
       "Genre": "Adventure",
-      "releaseYear": "2021",
+      "releaseYear": "2020",
       "description": "Embark on an Adventure Movie experience with Jumanji, released in 2021. In this 2-hour journey, witness a fantastical world where danger and excitement go hand in hand. The film invites you to join characters on a quest filled with challenges, puzzles, and unexpected twists. Explore the depths of the jungle and the mysteries that await those daring enough to roll the dice",
       "shortDesc": "Adventure Movie",
-      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800 ",
-      "buttonText": "Details",
-      "buttonVariant": "outlined"
+      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800 "
     },
     {
+      "id": "indiana-jones",
+      "title": "Indiana Jones",
+      "Genre": "Adventure",
+      "releaseYear": "2015",
+      "description": "Join Indiana Jones on a thrilling Adventure Movie experience with 'Indiana Jones and the Last Crusade,' released in 1989. In this action-packed journey, witness daring exploits, ancient mysteries, and heart-stopping escapades. The film, with a runtime of 2 hours and 7 minutes, takes you on a quest for the Holy Grail.",
+      "shortDesc": "Adventure Movie",
+      "ImageURL": "https://source.unsplash.com/user/davidclode/1900x800"
+    },
+    {
+      "id": "lord-of-the-rings",
+      "title": "The Lord of Rings",
+      "Genre": "Adventure",
+      "releaseYear": "2018",
+      "description": "Embark on an epic Adventure Movie with 'The Lord of the Rings: The Fellowship of the Ring,' released in 2001. This cinematic masterpiece, with a runtime of 2 hours and 58 minutes, takes you on a journey through Middle-earth, where a diverse group of characters unites to destroy the One Ring.",
+      "shortDesc": "Adventure Movie",
+      "ImageURL": "https://source.unsplash.com/user/jessedo81/1900x800"
+    },
+    {
+      "id": "jurassic-park",
+      "title": "Jurassic Park",
+      "Genre": "Adventure",
+      "releaseYear": "2019",
+      "description": "Experience the ultimate Adventure Movie with 'Jurassic Park,' released in 1993. In this groundbreaking film with a runtime of 2 hours and 7 minutes, delve into a world where dinosaurs roam once again. Join a group of characters as they navigate the dangers of an island filled with prehistoric creatures.",
+      "shortDesc": "Adventure Movie",
+      "ImageURL": "https://source.unsplash.com/user/davidclode/1900x800"
+    },
+    {
+      "id": "pirates",
+      "title": "Pirates Caribbean",
+      "Genre": "Adventure",
+      "releaseYear": "2022",
+      "description": "Sail into an Adventure Movie experience with 'Pirates of the Caribbean: The Curse of the Black Pearl,' released in 2003. This swashbuckling tale, with a runtime of 2 hours and 23 minutes, follows Captain Jack Sparrow on a quest for treasure, encountering supernatural threats and unforgettable characters.",
+      "shortDesc": "Adventure Movie",
+      "ImageURL": "https://source.unsplash.com/user/jeremythomasphoto/1900x800"
+    },
+    {
+      "id": "the-revenant",
+      "title": "The Revenant",
+      "Genre": "Adventure",
+      "releaseYear": "2023",
+      "description": "Immerse yourself in the rugged wilderness with 'The Revenant,' an intense Adventure Movie released in 2015. In this gripping tale, experience the journey of a frontiersman seeking survival and revenge in the harsh conditions of the American frontier. The film has a runtime of 2 hours and 36 minutes.",
+      "shortDesc": "Adventure Movie",
+      "ImageURL": "https://source.unsplash.com/user/erondu/1900x800"
+    },
+    {
+      "id": "drishyam",
       "title": "Drishyam",
       "Genre": "Suspense",
       "releaseYear": "2015",
       "description": "Drishyam a Suspense Movie from 2015, weaves a tale of intrigue and mystery over its 2-hour duration. This gripping film unfolds as characters navigate a web of secrets and deception, keeping audiences on the edge of their seats. Prepare for a cinematic experience that skillfully combines suspense with thought-provoking storytelling",
       "shortDesc": "Suspense Movie",
-      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800 ",
-      "buttonText": "Details",
-      "buttonVariant": "outlined"
+      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800 "
     },
     {
-      "title": "Pushpa",
-      "Genre": "Drama",
+      "id": "gone-girl",
+      "title": "Gone Girl",
+      "Genre": "Suspense",
       "releaseYear": "2018",
-      "description": "Step into the world of drama with Pushpa, a 2018 release that unfolds over 2 hours. This Drama Movie explores the complexities of human relationships, emotions, and the twists of fate that shape our lives. With a captivating narrative and stellar performances, Pushpa promises an emotional journey that resonates with audiences",
-      "shortDesc": "Drama Movie",
-      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800 ",
-      "buttonText": "Details",
-      "buttonVariant": "outlined"
+      "description": "Gone Girl, a suspenseful thriller released in 2014, takes audiences on a rollercoaster ride of twists and turns. This gripping film, with a runtime of 2 hours and 29 minutes, explores the complexities of a marriage amidst a mysterious disappearance. Brace yourself for a suspenseful journey that challenges perceptions and keeps you guessing.",
+      "shortDesc": "Suspenseful Thriller",
+      "ImageURL": "https://source.unsplash.com/user/peterlaster/1900x800"
     },
     {
-      "title": "Avengers",
-      "Genre": "Action",
-      "releaseYear": "2022",
-      "description": "Avengers the Action Movie of 2022, is a spectacle of epic proportions. With a runtime of 2 hours, this film unites iconic superheroes in a battle against formidable foes. Brace yourself for intense action, mind-blowing special effects, and a storyline that weaves together the destinies of Earth's mightiest heroes. Immerse yourself in a cinematic universe that has captured the hearts of audiences worldwide",
-      "shortDesc": "Action Movie",
-      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800 ",
-      "buttonText": "Details",
-      "buttonVariant": "outlined"
-    },
-    {
-      "title": "Jumanji",
-      "Genre": "Adventure",
-      "releaseYear": "2021",
-      "description": "Embark on an Adventure Movie experience with Jumanji, released in 2021. In this 2-hour journey, witness a fantastical world where danger and excitement go hand in hand. The film invites you to join characters on a quest filled with challenges, puzzles, and unexpected twists. Explore the depths of the jungle and the mysteries that await those daring enough to roll the dice",
-      "shortDesc": "Adventure Movie",
-      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800 ",
-      "buttonText": "Details",
-      "buttonVariant": "outlined"
-    },
-    {
-      "title": "Avatar",
-      "Genre": "Animation",
+      "id": "the-girl-tattoo",
+      "title": "The Girl Tattoo",
+      "Genre": "Suspense",
       "releaseYear": "2019",
-      "description": "An extraordinary Animation Movie released in 2019, Avatar takes audiences on a visually stunning journey.The film, with a runtime of 2 hours and 30 minutes, explores a captivating animated world with intricate details and compelling characters. Delve into a realm where imagination knows no bounds as you witness a tale that transcends the limits of reality. Immerse yourself in the beauty of animation and storytelling that brings the screen to life",
-      "shortDesc": "Animation Movie",
-      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800",
-      "buttonText": "Details",
-      "buttonVariant": "outlined"
+      "description": "The Girl with the Dragon Tattoo, a suspenseful mystery released in 2011, unravels a dark and intricate tale. As investigative journalist Mikael Blomkvist and hacker Lisbeth Salander delve into a wealthy family's history, they uncover shocking secrets. With a runtime of 2 hours and 32 minutes, this film keeps audiences on the edge of their seats.",
+      "shortDesc": "Suspenseful Mystery",
+      "ImageURL": "https://source.unsplash.com/user/jeremythomasphoto/1900x800"
     },
     {
-      "title": "FF10",
-      "Genre": "Racing",
+      "id": "prisoners",
+      "title": "Prisoners",
+      "Genre": "Suspense",
+      "releaseYear": "2020",
+      "description": "Prisoners, a suspenseful drama from 2013, explores the harrowing journey of two families when their daughters go missing. As Detective Loki pursues leads, the film delves into moral ambiguity and the lengths people will go to protect their loved ones. With a runtime of 2 hours and 33 minutes, this suspenseful drama leaves a lasting impact.",
+      "shortDesc": "Suspenseful Drama",
+      "ImageURL": "https://source.unsplash.com/user/jeremythomasphoto/1900x800"
+    },
+    {
+      "id": "se7en",
+      "title": "Se7en",
+      "Genre": "Suspense",
+      "releaseYear": "1922",
+      "description": "Se7en, a suspenseful crime thriller from 1995, follows detectives David Mills and William Somerset as they investigate a series of gruesome murders. This dark and intense film, with a runtime of 2 hours and 7 minutes, keeps audiences on the edge of their seats with its disturbing revelations and psychological twists.",
+      "shortDesc": "Suspenseful Thriller",
+      "ImageURL": "https://source.unsplash.com/user/codydoherty/1900x800"
+    },
+    {
+      "id": "shutter-island",
+      "title": "Shutter Island",
+      "Genre": "Suspense",
       "releaseYear": "2023",
-      "description": "Buckle up for a thrilling ride with FF10, a Racing Movie that hit the screens in 2023. With heart-pounding action and adrenaline-fueled sequences, this film promises to keep you on the edge of your seat for its entire 2 hours and 30 minutes runtime. Experience the rush of high-speed racing as you follow the intense journey of characters pushing the limits of speed and skill. Get ready for a cinematic adventure that captures the essence of the racing world",
-      "shortDesc": "Racing Movie",
-      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800 ",
-      "buttonText": "Details",
-      "buttonVariant": "outlined"
-    },
-    {
-      "title": "Avengers",
-      "Genre": "Action",
-      "releaseYear": "2022",
-      "description": "Avengers the Action Movie of 2022, is a spectacle of epic proportions. With a runtime of 2 hours, this film unites iconic superheroes in a battle against formidable foes. Brace yourself for intense action, mind-blowing special effects, and a storyline that weaves together the destinies of Earth's mightiest heroes. Immerse yourself in a cinematic universe that has captured the hearts of audiences worldwide",
-      "shortDesc": "Action Movie",
-      "ImageURL": "https://source.unsplash.com/user/c_v_r/1900x800 ",
-      "buttonText": "Details",
-      "buttonVariant": "outlined"
+      "description": "Shutter Island, a suspenseful psychological thriller from 2010, unfolds on an isolated island housing a psychiatric facility. As U.S. Marshal Teddy Daniels investigates a disappearance, the film takes unexpected turns. With a runtime of 2 hours and 18 minutes, Shutter Island offers a mind-bending journey into psychological suspense.",
+      "shortDesc": "Psycho Thriller",
+      "ImageURL": "https://source.unsplash.com/user/jeremythomasphoto/1900x800"
     }
   ]
 }

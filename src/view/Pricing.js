@@ -1,28 +1,21 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
-import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import StarIcon from '@mui/icons-material/StarBorder';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
-import { CardMedia, Drawer, Pagination } from '@mui/material';
-import Dialog from '@mui/material/Dialog';
-import DialogContent from '@mui/material/DialogContent';
-import movieData from './../../movie.json';
+import { CardMedia, Pagination, TextField } from '@mui/material';
+import movieData from '../movie.json';
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
-import MenuItem from '@mui/material/MenuItem';
-import Select from '@mui/material/Select';
-import { Header } from '../../layout/Header';
+import { useEffect, useState } from 'react';
+import { Header } from '../layout/Header';
+import { SideBar } from '../components/SideBar/SideBar';
 
 const { movies } = movieData;
 
@@ -33,26 +26,33 @@ export default function Pricing() {
   const [genresFilter, setGenresFilter] = useState('');
   const [releaseYearsFilter, setReleaseYearsFilter] = useState('');
   const [isDrawerOpen, setDrawerOpen] = useState(false);
+  const [searchMovie, setSearchMovie] = useState('');
+  const [newFinalMovieValue, setFinalNewMovieValue] = useState({});
   const handleMovieDetails = (card) => {
-    navigate(`/details/${card.title}`);
+    navigate(`/details/${card.id}`);
   };
 
-  const handleFilter = () => {
+  useEffect(() => {
     let filtered = movies;
-    if (genresFilter) {
-      filtered = filtered.filter((movie) => movie.Genre === String(genresFilter));
+    if (newFinalMovieValue.genre) {
+      filtered = filtered.filter((movie) => movie.Genre === String(newFinalMovieValue.genre));
     }
-    if (releaseYearsFilter) {
-      filtered = filtered.filter((movie) => movie.releaseYear === String(releaseYearsFilter));
+    if (newFinalMovieValue.releaseYear) {
+      filtered = filtered.filter((movie) => movie.releaseYear === String(newFinalMovieValue.releaseYear));
+    }
+    if (searchMovie) {
+      filtered = filtered.filter(
+        (movie) =>
+          movie.title.toLowerCase().includes(searchMovie)
+      );
     }
     setFilteredMovies(filtered);
-    setDrawerOpen(false);
-  };
-  const handleResetFilters = () => {
-    setGenresFilter('');
-    setReleaseYearsFilter('');
-    setFilteredMovies(movies);
-    setDrawerOpen(false);
+  },[newFinalMovieValue,searchMovie])
+
+  const handleSearch = (e) => {
+    const seachData = e.target.value.toLowerCase();
+    setSearchMovie(seachData);
+    setPage(1);
   };
 
   const itemsPerPage = 3;
@@ -70,50 +70,12 @@ export default function Pricing() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
-      <Header OpenSidebar={setDrawerOpen} />
-      <Drawer anchor="left" open={isDrawerOpen} onClose={() => setDrawerOpen(false)} PaperProps={{ sx: { width: 300 } }}>
-        <Box
-          sx={{ width: 250, padding: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}
-          role="presentation"
-        >
-          <Typography variant="h10" sx={{ marginLeft: -16, fontSize: 15 }}>Filter by Genre :</Typography>
-          <Select
-            value={genresFilter === '' ? 'All Genres' : genresFilter}
-            onChange={(e) => setGenresFilter(e.target.value === 'All Genres' ? '' : e.target.value)}
-            sx={{ width: 250, height: 35, marginTop: 1, marginRight: -2 }}
-          >
-            <MenuItem value="All Genres">All Genres</MenuItem>
-            <MenuItem value="Animation">Animation</MenuItem>
-            <MenuItem value="Racing">Racing</MenuItem>
-            <MenuItem value="Action">Action</MenuItem>
-            <MenuItem value="Adventure">Adventure</MenuItem>
-            <MenuItem value="Horror">Horror</MenuItem>
-            <MenuItem value="Suspense">Suspense</MenuItem>
-          </Select>
-          <Typography variant="h6" sx={{ marginLeft: -10, fontSize: 15, marginTop: 2 }}>Filter by Release Year :</Typography>
-          <Select
-            value={releaseYearsFilter === '' ? 'All Years' : releaseYearsFilter}
-            onChange={(e) =>
-              setReleaseYearsFilter(e.target.value === 'All Years' ? '' : e.target.value)
-            }
-            sx={{ width: 250, height: 35, marginTop: 1, marginRight: -2 }}
-          >
-            <MenuItem value="All Years">All Years</MenuItem>
-            <MenuItem value="2015">2015</MenuItem>
-            <MenuItem value="2018">2018</MenuItem>
-            <MenuItem value="2019">2019</MenuItem>
-            <MenuItem value="2020">2020</MenuItem>
-            <MenuItem value="2022">2022</MenuItem>
-            <MenuItem value="2023">2023</MenuItem>
-          </Select>
-          <Button variant="outlined" onClick={handleFilter} sx={{ marginTop: 2, width: '45%', marginRight: 12.7, height: 35, color: 'white', backgroundColor: '#2a52be' }}  >
-            Apply
-          </Button>
-          <Button variant="outlined" onClick={handleResetFilters} sx={{ marginTop: -4.4, width: '45%', marginLeft: 17, height: 35, color: 'white', backgroundColor: '#2a52be' }}>
-            Reset
-          </Button>
-        </Box>
-      </Drawer>
+      <Header OpenSidebar={setDrawerOpen} filteredData={filteredMovies.length} />
+      <SideBar drawerOpen={isDrawerOpen} onClose={setDrawerOpen}
+        genresFilter={genresFilter} releaseYearsFilter={releaseYearsFilter}
+        setGenresFilter={setGenresFilter} setReleaseYearsFilter={setReleaseYearsFilter}
+        setFinalNewMovieValue={setFinalNewMovieValue} 
+        setFilteredMovies={setFilteredMovies}/>
       <Container maxWidth="md" component="main" sx={{ pt: 8, pb: 6 }}>
         <Typography
           component="h1"
@@ -126,6 +88,17 @@ export default function Pricing() {
         >
           Movies List
         </Typography>
+        <Grid item md={12}>
+          <TextField
+            label="Search"
+            variant="outlined"
+            margin="normal"
+            size='small'
+            value={searchMovie}
+            onChange={handleSearch}
+            sx={{ marginTop: 0, marginBottom: 3, width: 250, marginLeft: 75 }}
+          />
+        </Grid>
         {filteredMovies.length === 0 ? (
           <Typography variant="h5" align="center" color="text.secondary">
             No movies found.
@@ -144,7 +117,7 @@ export default function Pricing() {
                   <Card>
                     <CardHeader
                       title={movie.title}
-                      titleTypographyProps={{ align: 'center', fontWeight: 'bold', fontSize: 30 }}
+                      titleTypographyProps={{ align: 'center', fontWeight: 'bold', fontSize: 20, }}
                       action={movie.title === 'Pro' ? <StarIcon /> : null}
                       subheaderTypographyProps={{
                         align: 'center',
@@ -178,9 +151,12 @@ export default function Pricing() {
                       <Typography component="h2" variant="h5" color="text.primary" align='center'>
                         {movie.shortDesc}
                       </Typography>
+                      <Typography component="h2" variant="h5" color="text.primary" align='center'>
+                        {movie.releaseYear}
+                      </Typography>
                     </CardContent>
                     <CardActions>
-                      <Button fullWidth variant={movie.buttonVariant} onClick={() => handleMovieDetails(movie)} sx={{ color: 'white', backgroundColor: '#2a52be' }}>
+                      <Button fullWidth variant="contained" onClick={() => handleMovieDetails(movie)} sx={{ color: 'white', backgroundColor: '#2a52be' }}>
                         View Details
                       </Button>
                     </CardActions>
@@ -193,7 +169,7 @@ export default function Pricing() {
                 count={totalPages}
                 page={page}
                 onChange={handleChangePage}
-                variant="outlined"
+                variant="contained"
                 color="primary"
               />
             </Box>
